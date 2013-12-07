@@ -1,0 +1,229 @@
+body, div {
+	/*font-size:1em;
+	font-weight:400;
+	word-spacing:normal;
+	letter-spacing:normal;
+	text-transform:none;
+	font-family:Verdana, Myriad Web, Syntax, sans-serif;
+	font-size-adjust:.58;
+	color:#000;
+	background:#FFF;
+	line-height:1.58em;
+	border-top:0;
+	border-left:0;
+	border-bottom:0;
+	border-right:0;
+	width:auto;
+	padding:0;*/
+	margin:1em 5% 1em 5%;
+}
+
+
+#vis {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	font-size:1.5em;
+	/*font-weight:600;*/
+}
+
+.coef_point {
+	stroke: #000;
+	stroke-width: 0.5px;
+	fill: #ccc;
+}
+
+.coef_line {
+	stroke: lightgray;
+	stroke-width: 0.75px;
+}
+
+.coef_circle {
+	stroke: black;
+	stroke-width: 0.5px;
+	fill: none;
+}
+
+.curve {
+	fill: none;
+	stroke: red;
+	stroke-width: 2px;
+}
+
+.trail {
+	fill: none;
+	stroke: red;
+	stroke-width: 1px;
+}
+
+
+.link_line {
+	stroke: red;
+	stroke-width: 0.3px;
+}
+
+.link_point {
+	stroke: red;
+	stroke-width: 1px;
+	fill: red;
+}
+
+.indiv_circle {
+	stroke: black;
+	stroke-width: 0.5px;
+	fill: none;
+}
+
+.indiv_circle_point {
+	stroke: red;
+	stroke-width: 0.5px;
+	fill: red;
+}
+
+.indiv_circle_line {
+	stroke: red;
+	stroke-width: 1px;
+}
+
+.indiv_initphi_line {
+	stroke: black;
+	stroke-width: 0.5px;
+}
+
+
+.keys {
+	font-weight: bold;
+}
+
+.x_Axis path, .x_Axis line {
+	fill: none;
+	stroke: black;
+	stroke-width: 1px;
+	shape-rendering: crispEdges;
+}
+
+.y_Axis path, .y_Axis line{
+	fill: none;
+	stroke: black;
+	stroke-width: 1px;
+	shape-rendering: crispEdges;
+}
+
+.x_Axis line, .y_Axis line {
+	display: none;
+}
+
+.font_axis {
+	font-size: 0.7em;
+	font-weight: normal;
+}
+
+.invisible {
+	display: none;
+}
+
+.coef{
+	text-anchor: middle;
+	font-size:1em;
+	font-weight: normal;
+	fill: black;
+	border : 1px;
+}
+
+.active {
+	fill: red;
+}
+
+.coef_box {
+	stroke: gray;
+	stroke-width: 1px;
+	fill: none;
+	shape-rendering: crispEdges;
+}
+
+
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 5px 20px;
+	display: inline-block;
+	margin: 15px 30px;
+	/*text-transform: uppercase;*/
+	letter-spacing: 0px;
+	font-weight: normal;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btn:before,
+.icon-heart:after,
+.icon-star:after,
+.icon-plus:after,
+.icon-file:before {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Button 6 */
+.btn-6 {
+	color: #fff;
+	background: #226fbe;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+
+.btn-6:active {
+	top: 2px;
+}
+
+
+/* Button 6b */
+.btn-6b {
+	border: 1px solid #000;
+	border-radius: 5px;
+}
+
+.btn-6b:hover {
+
+	background: lightgray;
+	/*background: transparent;*/
+	/*color: #226fbe;*/
+}
+
+/* Button 6c */
+.btn-6c {
+	border: 4px solid #226fbe;
+	border-radius: 60px;
+}
+
+
+
+
+

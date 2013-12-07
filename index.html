@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Fourier Transform</title>
+	<link href="./css/style.css" rel="stylesheet">
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="./js/Complex.js"></script>
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+
+<body>
+
+<h2 id="title">Fourier Transform </h2>
+<p>The <a href="http://en.wikipedia.org/wiki/Fourier_transform">Discrete Fourier Transform</a> (DFT) of a time series maps it to the the frequency space and the inverse (IDFT) transformation brings back the original signal. Each time series has a unique representation in the frequency space, from which the time series can be reconstructed.</p>
+<p>The DFT and IDFT are respectively:  \( X_k = \sum_{n=0}^{N-1} x_n \cdot e^{(-2 \pi i\, k\, n) / N} \) and \(x_n = \frac{1}{N} \sum_{k=0}^{N-1} X_k \cdot e^{(2 \pi i\, k\, n) / N}\) </p>
+
+<p>The animation below is designed to help understand how a sum of monofrequency signals, represented by complex \(e^{2 i \pi f n}\), can approximate an arbitrary given time series, based on a few typical examples. The complex exponentials are projected to the real axis (vertical) to obtain the time series. The numbers below each single frequency signal are respectively the amplitude and the phase (as a multiple of \(\pi\)).</p>
+
+<p>Press <span class="keys">Right Arrow</span> to speed up transitions, <span class="keys">Left Arrow</span> to slow down, <span class="keys">Down Arrow</span> for a temporary slow motion, <span class="keys">Up Arrow</span> to go back to initial speed, <span class="keys">L/S</span> to lengthen/shorten the trail</p>
+<br>
+
+<p style="text-align: center">
+	<button class="btn btn6 btn-6b square" onclick="update_square();">Square</button>
+	<button class="btn btn6 btn-6b saw" onclick="update_saw();">SawTooth</button>
+	<button class="btn btn6 btn-6b triangle" onclick="update_triangle();">Triangle</button>
+	<button class="btn btn6 btn-6b pulse" onclick="update_pulse();">Pulse</button>
+</p>
+
+<div id="vis"></div>
+
+</body>
+
+<script type="text/javascript" src="./js/fouriertransform.js"></script>
+
+</html>
